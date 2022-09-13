@@ -27,7 +27,7 @@ function App() {
   }
 
   useEffect(() => {
-    navigate('/home');
+    //navigate('/home');
     dispatch(fetchItemList());
   }, [dispatch]);
 
