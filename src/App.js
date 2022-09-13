@@ -37,9 +37,9 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
-          <Route path='*/home' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
-          <Route path='*/cart' element={<CartList showToastMessage={showToastMessage}/>}/>
-          <Route path='*/about' element={<About/>}/>
+          <Route path='/home' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
+          <Route path='/cart' element={<CartList showToastMessage={showToastMessage}/>}/>
+          <Route path='/about' element={<About/>}/>
           <Route path='*' element={<h1>Error</h1>}/>
         </Routes>
         <Toast message={toastMessage} ref={toast}/>
