@@ -37,6 +37,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
+          <Route path='/react-project/' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
           <Route path='/home' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
           <Route path='/cart' element={<CartList showToastMessage={showToastMessage}/>}/>
           <Route path='/about' element={<About/>}/>
