@@ -163,11 +163,42 @@ button {
   gap: 10px;
 }
 
+.apps-link-container {
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.apps-link-container a {
+  color: var(--black);
+}
+
+.apps-link {
+  width: 130px;
+  height: 130px;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-size: medium;
+  text-decoration: none;
+  display: grid;
+  justify-content: center;
+  align-content: flex-end;
+}
+
 @keyframes rotate {
   from {
     transform:  rotateZ(0);
   }
   to {
     transform: rotateZ(360deg);
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .screen-center {
+    height: auto;
+    margin: 100px 0;
   }
 }

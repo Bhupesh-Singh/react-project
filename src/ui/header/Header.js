@@ -9,9 +9,9 @@ export default function Header() {
         <>
             <header>
                 <nav className="header-navigation">
-                    <NavLink to='/home' className="nav-link">Home</NavLink>
-                    <NavLink to='/about' className="nav-link">About</NavLink>
-                    <NavLink to='/cart' className="nav-link ml-auto">Cart : {cartList.length}</NavLink>
+                    <NavLink to='/react-project/home' className="nav-link">Home</NavLink>
+                    <NavLink to='/react-project/about' className="nav-link">About</NavLink>
+                    <NavLink to='/react-project/cart' className="nav-link ml-auto">Cart : {cartList.length}</NavLink>
                 </nav>
             </header>
         </>

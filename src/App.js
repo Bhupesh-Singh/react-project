@@ -27,7 +27,6 @@ function App() {
   }
 
   useEffect(() => {
-    //navigate('/home');
     dispatch(fetchItemList());
   }, [dispatch]);
 
@@ -36,11 +35,10 @@ function App() {
       <div>
         <Header/>
         <Routes>
-          <Route path='/' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
           <Route path='/react-project/' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
-          <Route path='/home' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
-          <Route path='/cart' element={<CartList showToastMessage={showToastMessage}/>}/>
-          <Route path='/about' element={<About/>}/>
+          <Route path='/react-project/home' element={<ItemList itemList={itemList} showToastMessage={showToastMessage}/>}/>
+          <Route path='/react-project/cart' element={<CartList showToastMessage={showToastMessage}/>}/>
+          <Route path='/react-project/about' element={<About/>}/>
           <Route path='*' element={<h1>Error</h1>}/>
         </Routes>
         <Toast message={toastMessage} ref={toast}/>
